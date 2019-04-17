@@ -303,8 +303,12 @@ template {
 [hidden] {
   display: none; }
 
-.nav__item {
-  background-color: orange; }
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  list-style: none; }
 
 .grid__row {
   padding: 1em 10px;
@@ -401,5 +405,15 @@ template {
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
+
+.grid__col--3 {
+  display: flex;
+  justify-content: center; }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0; }
 
 /*# sourceMappingURL=styles.css.map */

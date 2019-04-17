@@ -1,5 +1,11 @@
 // Base styles
 
-.nav__item {
-	background-color: orange;
+a {
+	text-decoration: none;
+	color: $black;
 }
+
+ul {
+	list-style: none;
+}
+

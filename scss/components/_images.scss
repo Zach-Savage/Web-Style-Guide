@@ -1,0 +1,7 @@
+
+//image styles
+
+.grid__col--3 {
+	@include flexy($just: center);
+}
+
