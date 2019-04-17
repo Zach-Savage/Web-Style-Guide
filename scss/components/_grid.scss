@@ -7,6 +7,25 @@
 // **********************************************
 
 
+.container {
+  @include flexy($dir: column);
+  justify-content: center;
+}
+
+.grid__row p {
+  width: 90%;
+  margin: auto;
+}
+
+.grid__col--12 {
+  .card {
+    p {
+      padding-top: 30px;
+    }
+  }
+}
+
+
 // grid base class
 .grid {
 
