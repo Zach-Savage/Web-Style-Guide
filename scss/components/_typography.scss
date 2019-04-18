@@ -2,7 +2,8 @@
 // Typography styles
 
 .grid__col--8 {
-	@include flexy($just: center);;
+	@include flexy($just: center);
+	font-family: $font-main;
 
 	& p {
 		line-height: 1.5em;
@@ -38,4 +39,5 @@
 	float: right;
 	padding-left: 10px;
 	border-left: 10px solid $main-color;
+	font-style: italic;
 }
