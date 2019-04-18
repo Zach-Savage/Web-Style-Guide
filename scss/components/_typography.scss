@@ -1,0 +1,41 @@
+
+// Typography styles
+
+.grid__col--8 {
+	@include flexy($just: center);;
+
+	& p {
+		line-height: 1.5em;
+	}
+}
+
+.headline--primary {
+	color: $main-color;
+	width: 80%;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.headline--secondary {
+	font-family: $font-main;
+	font-weight: lighter;
+}
+
+.headline--primary,
+.headline--secondary {
+	width: 70%;
+	padding-left: 5vw;
+}
+
+.link,
+.link:visited {
+	color: $secondary-color;
+}
+	
+.blockquote {
+	font-size: 1.3em;
+	width: 70%;
+	float: right;
+	padding-left: 10px;
+	border-left: 10px solid $main-color;
+}
