@@ -308,9 +308,9 @@ template {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: #3dd0ff; }
   a:visited {
-    color: black; }
+    color: #5f5f5f; }
 
 ul {
   list-style: none; }
@@ -318,13 +318,17 @@ ul {
 p {
   font-family: "Montserrat", sans-serif; }
 
+.grid__row {
+  display: flex;
+  align-items: center; }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .grid__row p {
-  width: 90%;
+  width: 85%;
   margin: auto; }
 
 .grid__col--12 .card p {
@@ -434,10 +438,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-left: 0; }
 
 .nav__item {
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 10px;
   padding-top: 15px;
@@ -448,5 +453,40 @@ p {
     background-color: #67d0ad; }
   .nav__item:hover a {
     color: #fff; }
+
+.grid__col--9 {
+  width: 85%; }
+
+.grid__col--8 {
+  display: flex;
+  justify-content: center; }
+  .grid__col--8 p {
+    line-height: 1.5em; }
+
+.headline--primary {
+  color: #67d0ad;
+  width: 80%;
+  text-align: center;
+  font-size: 1.8em; }
+
+.headline--secondary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter; }
+
+.headline--primary,
+.headline--secondary {
+  width: 70%;
+  padding-left: 5vw; }
+
+.link,
+.link:visited {
+  color: #3dd0ff; }
+
+.blockquote {
+  font-size: 1.3em;
+  width: 70%;
+  float: right;
+  padding-left: 10px;
+  border-left: 10px solid #67d0ad; }
 
 /*# sourceMappingURL=styles.css.map */

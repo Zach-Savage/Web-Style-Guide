@@ -6,6 +6,9 @@
 // but additional styling may be needed
 // **********************************************
 
+.grid__row {
+  @include flexy($align: center);
+}
 
 .container {
   @include flexy($dir: column);
@@ -13,7 +16,7 @@
 }
 
 .grid__row p {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
@@ -41,7 +44,7 @@
     }
   }
 
-  // .grid__col
+  //.grid__col
   &__col {
 
     // create grid columns dynamically

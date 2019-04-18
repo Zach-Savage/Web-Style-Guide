@@ -1,14 +1,14 @@
 // Base styles
 
 * {
-	color: #5f5f5f;
+	color: $font-color;
 }
 
 a {
 	text-decoration: none;
-	color: $black;
+	color: $secondary-color;
 	&:visited {
-		color: black;
+		color: $font-color;
 	};
 }
 
