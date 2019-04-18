@@ -5,11 +5,12 @@
 .nav {
 	@include flexy($dir: column);
 	align-items: center;
+	justify-content: center;
 	padding-left: 0;
 }
 
 .nav__item {
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	padding: 10px;
 	padding-top: 15px;
@@ -26,6 +27,9 @@
 	}
 }
 
+.grid__col--9 {
+	width: 85%;
+}
 
 
 
