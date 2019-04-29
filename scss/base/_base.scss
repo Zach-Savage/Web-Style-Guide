@@ -5,11 +5,7 @@
 }
 
 a {
-	text-decoration: none;
-	color: $font-color;
-	&:visited {
-		color: $font-color;
-	};
+	@extend %link;
 }
 
 ul {

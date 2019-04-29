@@ -19,6 +19,11 @@
 .grid__row p {
   width: 85%;
   margin: auto;
+  line-height: 1.5em;
+}
+
+.grid__row div {
+  justify-content: flex-start;
 }
 
 .grid__col--12 {
@@ -37,6 +42,10 @@
 div[class*="theme__colors"] {
 
   font-family: $font-main;
+  padding: 10px 0px 10px 10px;
+  margin: 3px 0;
+  border-radius: 5px;
+  width: 95%;
 
   &.grid__col--12 {
     background-color: $lighter-green;

@@ -3,7 +3,7 @@
 
 .form {
 	@include flexy($dir: column);
-	align-items: center;
+	@extend %centering;
 	width: 383px;
 
 	& legend {

@@ -4,8 +4,7 @@
 
 .nav {
 	@include flexy($dir: column);
-	align-items: center;
-	justify-content: center;
+	@extend %centering;
 	padding-left: 0;
 }
 
@@ -20,7 +19,7 @@
 
 
 	&:hover {
-		background-color: $main-color;
+		@extend %theme-bground;
 	};
 
 	&:hover a {

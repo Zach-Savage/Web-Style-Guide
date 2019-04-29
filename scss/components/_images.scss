@@ -3,11 +3,11 @@
 
 .grid__col--3 {
 	@include flexy($just: center);
+	@extend %centering;
 }
 
 .img--avatar {
-	width: 50%;
-	height: 50%;
+	@extend %img-size;
 }
 
 .img--frame {
@@ -15,7 +15,3 @@
 	padding: 9px;
 }
 
-.img--avatar {
-	width: 150px;
-	margin-top: 15px;
-}
