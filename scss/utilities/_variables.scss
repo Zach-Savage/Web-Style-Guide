@@ -16,3 +16,25 @@ $secondary-color: lighten(#33CEFF, 2);          //aqua
 $font-color: #5f5f5f;
 $font-size-h2: 1.21m;
 $font-main: 'Montserrat', sans-serif;
+
+
+
+// Theme colors
+
+$theme-green: #3cb371;
+$theme-red: #f08080;
+$theme-orange: #ff6347;
+$theme-purple: #483d8b;
+
+
+//lighter & darker colors
+
+$light-green: lighten($theme-green, 15%);
+$lighter-green: lighten($theme-green, 25%);
+$light-red: lighten($theme-red, 10%);
+$light-blue: lighten(#3dd0ff, 25%);  // lightened the lightened version of aqua line 10 in this sheet
+$light-purp: lighten($theme-purple, 35%);
+$light-orange: lighten($theme-orange, 15%);
+
+
+$dark-blue: darken(#3dd0ff, 25%);  // darkened the lightened version of aqua
