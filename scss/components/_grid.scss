@@ -8,6 +8,7 @@
 
 .grid__row {
   @include flexy($align: center);
+  justify-content: center;
 }
 
 .container {
@@ -27,6 +28,48 @@
     }
   }
 }
+
+
+
+// grid themes 
+
+
+div[class*="theme__colors"] {
+
+  font-family: $font-main;
+
+  &.grid__col--12 {
+    background-color: $lighter-green;
+  }
+
+  &.grid__col--6 {
+    background-color: $dark-blue;
+  }
+
+  &.grid__col--4 {
+    background-color: $light-blue;
+  }
+
+  &.grid__col--3 {
+    background-color: $light-purp;
+  }
+
+  &.grid__col--5 {
+    background-color: $light-green;
+  }
+
+  &.grid__col--7 {
+    background-color: $light-red;
+  }
+
+  &.grid__col--8 {
+    background-color: $light-orange;
+  }
+
+}
+
+
+
 
 
 // grid base class
