@@ -6,6 +6,10 @@
 // but additional styling may be needed
 // **********************************************
 
+.container {
+  align-items: center;
+}
+
 .grid__row {
   @include flexy($align: center);
   justify-content: center;
@@ -156,8 +160,16 @@ div[class*="theme__colors"] {
         justify-content: space-around;
       }
 
-      .grid__col--12 {
+      .grid__col-- {
+        &4,
+        &5,
+        &7 {
+          text-align: center;
+        }
+      }
 
+      .grid__row {
+        width: 90%;
       }
 
     }
