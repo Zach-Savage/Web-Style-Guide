@@ -10,13 +10,6 @@
 	}
 }
 
-.headline--primary {
-	color: $main-color;
-	width: 80%;
-	text-align: center;
-	font-size: 1.8em;
-	margin-bottom: 30px;
-}
 
 .headline--secondary {
 	font-family: $font-main;
@@ -25,10 +18,25 @@
 	text-align: left;
 }
 
+.card > .headline--secondary {
+	padding-left: 8vw;
+	@include mq(desktop) {
+		padding-left: 0;
+	}
+}
+
 .headline--primary,
 .headline--secondary {
 	width: 90%;
-	padding-left: 5vw;
+}
+
+.headline--primary {
+	color: $main-color;
+	width: 70%;
+	text-align: left;
+	font-size: 1.8em;
+	margin-bottom: 40px;
+	padding-left: 10vw;
 }
 
 .link,
@@ -54,6 +62,6 @@
 
 @include mq(desktop) {
 		.headline--primary {
-			padding-left: 3vw;
+			padding-left: 7vw;
 		}
 }

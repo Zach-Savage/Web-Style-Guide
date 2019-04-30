@@ -7,18 +7,17 @@
 // **********************************************
 
 .container {
+  @include flexy($dir: column);
+  justify-content: center;
   align-items: center;
 }
 
 .grid__row {
   @include flexy($align: center);
   justify-content: center;
+  width: 100%;
 }
 
-.container {
-  @include flexy($dir: column);
-  justify-content: center;
-}
 
 .grid__row p {
   width: 85%;
@@ -62,6 +61,7 @@ div[class*="theme__colors"] {
 
   &.grid__col--3 {
     background-color: $light-purp;
+    justify-content: flex-start;
   }
 
   &.grid__col--5 {
@@ -74,6 +74,7 @@ div[class*="theme__colors"] {
 
   &.grid__col--8 {
     background-color: $light-orange;
+    justify-content: flex-start;
   }
 
 }
@@ -166,10 +167,19 @@ div[class*="theme__colors"] {
         &7 {
           text-align: center;
         }
+
+      }
+
+      div[class*="theme__colors"] {
+        &.grid__col--3,
+        &.grid__col--8 {
+          justify-content: center;
+        }
       }
 
       .grid__row {
         width: 90%;
       }
+
 
     }
