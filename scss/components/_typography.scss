@@ -39,7 +39,20 @@
 	font-size: 1.3em;
 	width: 70%;
 	float: right;
-	padding-left: 10px;
+	padding-left: 20px;
 	border-left: 10px solid $main-color;
 	font-style: italic;
+
+	@include mq(desktop) {
+		float: none;
+		margin-left: 10%;
+		font-size: 1.4rem;
+	}
+}
+
+
+@include mq(desktop) {
+		.headline--primary {
+			padding-left: 3vw;
+		}
 }

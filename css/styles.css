@@ -344,9 +344,6 @@ p {
   margin: auto;
   line-height: 1.5em; }
 
-.grid__row div {
-  justify-content: flex-start; }
-
 .grid__col--12 .card p {
   padding-top: 30px; }
 
@@ -467,6 +464,16 @@ div[class*="theme__colors"] {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
 
+@media (min-width: 768px) {
+  .grid__col--6 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .grid__row > .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
 button[class*="btn"] {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -495,6 +502,15 @@ button[class*="btn"] {
   background-color: #483d8b;
   margin-bottom: 30px; }
 
+/*@include mq(desktop) {
+	.grid__col--12 {
+		@include flexy();
+		width: 100%;
+		justify-content: space-around;
+		flex-basis: 230px;
+
+	}
+}*/
 .form {
   display: flex;
   flex-direction: column;
@@ -531,16 +547,24 @@ button[class*="btn"] {
 
 .grid__col--3 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 20px; }
 
 .img--frame {
   border: solid lightgrey 1px;
   padding: 9px; }
 
+@media (min-width: 768px) {
+  .img--logo {
+    padding-left: 10vw; } }
 .nav {
   display: flex;
   flex-direction: column;
   padding-left: 0; }
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: row; } }
 
 .nav__item {
   width: 100%;
@@ -552,6 +576,10 @@ button[class*="btn"] {
   font-size: 1.21m; }
   .nav__item:hover a {
     color: #fff; }
+  @media (min-width: 768px) {
+    .nav__item {
+      flex-basis: 100px;
+      font-size: 1.3rem; } }
 
 .grid__col--9 {
   width: 85%; }
@@ -588,8 +616,17 @@ button[class*="btn"] {
   font-size: 1.3em;
   width: 70%;
   float: right;
-  padding-left: 10px;
+  padding-left: 20px;
   border-left: 10px solid #67d0ad;
   font-style: italic; }
+  @media (min-width: 768px) {
+    .blockquote {
+      float: none;
+      margin-left: 10%;
+      font-size: 1.4rem; } }
+
+@media (min-width: 768px) {
+  .headline--primary {
+    padding-left: 3vw; } }
 
 /*# sourceMappingURL=styles.css.map */

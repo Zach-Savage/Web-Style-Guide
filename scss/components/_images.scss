@@ -4,6 +4,7 @@
 .grid__col--3 {
 	@include flexy($just: center);
 	@extend %centering;
+	padding-top: 20px;
 }
 
 .img--avatar {
@@ -15,3 +16,10 @@
 	padding: 9px;
 }
 
+
+
+@include mq(desktop) {
+	.img--logo {
+		padding-left: 10vw;
+	}
+}

@@ -22,9 +22,6 @@
   line-height: 1.5em;
 }
 
-.grid__row div {
-  justify-content: flex-start;
-}
 
 .grid__col--12 {
   .card {
@@ -114,7 +111,9 @@ div[class*="theme__colors"] {
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+
+
+        @include mq(desktop) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -133,10 +132,32 @@ div[class*="theme__colors"] {
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+
+
+    @include mq(desktop) {
 
       // add grid gutter
       margin-left: 10px;
     }
   }
 }
+
+
+
+    @include mq(desktop) {
+
+      .grid__col--6 {
+        @include flexy($align: center);
+        justify-content: center;
+        }
+
+      .grid__row > .grid__col--12 {
+        @include flexy($dir: row);
+        justify-content: space-around;
+      }
+
+      .grid__col--12 {
+
+      }
+
+    }

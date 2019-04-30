@@ -44,3 +44,21 @@ button[class*="btn"] {
 		margin-bottom: 30px;
 	}
 }
+
+
+
+
+
+// Media Queries
+
+
+
+/*@include mq(desktop) {
+	.grid__col--12 {
+		@include flexy();
+		width: 100%;
+		justify-content: space-around;
+		flex-basis: 230px;
+
+	}
+}*/
