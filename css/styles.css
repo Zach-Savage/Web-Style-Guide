@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700);
 a {
   text-decoration: none;
   color: #5f5f5f; }
@@ -326,9 +327,6 @@ template {
 ul {
   list-style: none; }
 
-p {
-  font-family: "Montserrat", sans-serif; }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -347,7 +345,8 @@ p {
   line-height: 1.5em; }
 
 .grid__col--12 .card p {
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-family: "Montserrat", sans-serif; }
 
 div[class*="theme__colors"] {
   font-family: "Montserrat", sans-serif;
@@ -579,8 +578,7 @@ button[class*="btn"] {
 .nav__item {
   width: 80%;
   text-align: center;
-  padding: 10px;
-  padding-top: 15px;
+  padding: 15px 10px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21m; }
